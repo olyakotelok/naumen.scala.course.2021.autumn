@@ -1,0 +1,26 @@
+C:\Users\1>scala
+Welcome to Scala 2.12.10 (Java HotSpot(TM) 64-Bit Server VM, Java 13.0.2).
+Type in expressions for evaluation. Or try :help.
+
+scala> println("Hello Scala! This is Olga")
+Hello Scala! This is Olga
+
+scala> printf("%s Scala! This is Olga", "Hi")
+Hi Scala! This is Olga
+scala> var greetings = Array("Good morning", "Good day", "Good evening")
+greetings: Array[String] = Array(Good morning, Good day, Good evening)
+
+scala> greetings
+res2: Array[String] = Array(Good morning, Good day, Good evening)
+
+scala> greetings(1)
+res3: String = Good day
+
+scala> greetings.foreach(gr => printf("%s Scala! This is Olga. ", gr))
+Good morning Scala! This is Olga. Good day Scala! This is Olga. Good evening Scala! This is Olga. 
+
+scala> greetings.foreach(gr => println(gr + " Scala! This is " + "Olga".reverse)
+     | )
+Good morning Scala! This is aglO
+Good day Scala! This is aglO
+Good evening Scala! This is aglO
